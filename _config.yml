@@ -1,12 +1,12 @@
-title: "My AWS Practice Labs"
+title: "AWS Practice Labs"
 author: "Martín Germano"
 description: "In the learning path of AWS services i want to write and share thoughts desing and configuration about some specifics escenarios" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
-email: "example@mail.com"
-twitter_username: "twitteruser"
-github_username: "githubuser"
+email: "mart.germano@mail.com"
+#twitter_username: "twitteruser"
+#github_username: "githubuser"
 linkedin_username: "linkedinuser"
 #facebook_username: username
 #flickr_username: username
