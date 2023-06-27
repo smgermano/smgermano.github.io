@@ -14,7 +14,7 @@ Steps:
 
 1. Show where i'm booting
 
-mount | egrep "/([[:space:]]|boot)"
+   $ mount | egrep "/([[:space:]]|boot)"
 
 /dev/sdb2 on / type ext4 (rw,noatime)
 /dev/sdb1 on /boot type vfat (rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,flush,errors=remount-ro)
@@ -25,18 +25,18 @@ Wait several time
 
 2. Clone sdb -> mmcblk0 and change boot from SDcard
 
-  sudo rpi-clone mmcblk0
+   $ sudo rpi-clone mmcblk0
 
-Booted disk: sdb 480.1GB               	Destination disk: mmcblk0 127.9GB
----------------------------------------------------------------------------
+"Booted disk: sdb 480.1GB               	Destination disk: mmcblk0 127.9GB
+---------------------------------------------------------------------------"
 Part  	Size	FS 	Label       	Part   Size	FS 	Label   
 1 /boot   256.0M  fat32  --          	1  	256.0M  fat32  -- 	 
 2 root	446.9G  ext4   rpi-OS      	2  	118.9G  ext4   rootfs  
----------------------------------------------------------------------------
+---------------------------------------------------------------------------"
 == SYNC sdb file systems to mmcblk0 ==
 /boot             	(30.0M used)   : SYNC to mmcblk0p1 (256.0M size)
 /                 	(30.1G used)   : SYNC to mmcblk0p2 (118.9G size)
----------------------------------------------------------------------------
+---------------------------------------------------------------------------"
 Run setup script   	: no.
 Verbose mode       	: no.
 -----------------------:
@@ -52,7 +52,7 @@ Syncing mounted partitions:
 
 Editing /mnt/clone/boot/cmdline.txt PARTUUID to use 6ee70e10
 Editing /mnt/clone/etc/fstab PARTUUID to use 6ee70e10
-===============================
+==============================="
 Done with clone to /dev/mmcblk0
    Start - 17:35:03	End - 17:42:01	Elapsed Time - 6:58
 
@@ -64,6 +64,7 @@ Cloned partitions are mounted on /mnt/clone for inspection or customizing.
 
 #### Pendiente:
 ========
+
 3. Clone mmcblk0 -> sdb and change boot from SSD sdb
 
 4. Keep backup :
