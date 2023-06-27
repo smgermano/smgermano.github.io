@@ -3,6 +3,7 @@
 
 #### rpi-clone (simple mode)
 Clone system from SD card to USB-SATA SSD
+
 https://github.com/billw2/rpi-clone
 
 #### rpi-clone (used to backup and boot from different source)
@@ -13,9 +14,9 @@ It needs to make changes in fstab, but after that we want to make sure it is boo
 Steps:
 
 1. Show where i'm booting
-
-   $ mount | egrep "/([[:space:]]|boot)"
-
+```  
+$ mount | egrep "/([[:space:]]|boot)"
+```
 /dev/sdb2 on / type ext4 (rw,noatime)
 /dev/sdb1 on /boot type vfat (rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,flush,errors=remount-ro)
 
@@ -24,9 +25,9 @@ Steps:
 Wait several time
 
 2. Clone sdb -> mmcblk0 and change boot from SDcard
-
-   $ sudo rpi-clone mmcblk0
-
+````
+$ sudo rpi-clone mmcblk0
+````
 "Booted disk: sdb 480.1GB               	Destination disk: mmcblk0 127.9GB
 ---------------------------------------------------------------------------"
 Part  	Size	FS 	Label       	Part   Size	FS 	Label   
