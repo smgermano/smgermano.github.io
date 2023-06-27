@@ -1,10 +1,10 @@
 
-## How to Backup and Restore Raspberry Pi OS system (SD card <-> SSD)
+## How to Backup and Restore Raspberry Pi OS system (SD card to SSD and inverse)
 
 #### rpi-clone (simple mode)
 Clone system from SD card to USB-SATA SSD
 
-https://github.com/billw2/rpi-clone
+[rpi-clone](https://github.com/billw2/rpi-clone)
 
 #### rpi-clone (used to backup and boot from different source)
 The system is booting from SD-SATA adapter 480 GB
@@ -15,12 +15,12 @@ Steps:
 
 1. Show where i'm booting
 ```  
-$ mount | egrep "/([[:space:]]|boot)"
+ $ mount | egrep "/([[:space:]]|boot)"
 ```
-/dev/sdb2 on / type ext4 (rw,noatime)
-/dev/sdb1 on /boot type vfat (rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,flush,errors=remount-ro)
+  /dev/sdb2 on / type ext4 (rw,noatime)
+  /dev/sdb1 on /boot type vfat (rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,flush,errors=remount-ro)
 
-(booting from sdb1, SATA-USB adapter SD disk )
+  (booting from sdb1, SATA-USB adapter SD disk )
 
 Wait several time
 
