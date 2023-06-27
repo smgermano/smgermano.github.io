@@ -1,8 +1,11 @@
-rpi-clone (simple mode)
+
+## How to Bakcup and Restore Raspberry Pi OS system 
+
+#### rpi-clone (simple mode)
 Clone system from SD card to USB-SATA SSD
 https://github.com/billw2/rpi-clone
 
-rpi-clone (used to backup and boot from different source)
+#### rpi-clone (used to backup and boot from different source)
 The system is booting from SD-SATA adapter 480 GB
 
 It needs to make changes in fstab, but after that we want to make sure it is booting from SDcard, because if the process fail. We can extract SD card and modify /etc/fstab
@@ -59,7 +62,7 @@ Cloned partitions are mounted on /mnt/clone for inspection or customizing.
  Make changes of fstab (than can may editables if fail by extracting SD card)
  If changes works, follow step 3
 
-Pendiente:
+#### Pendiente:
 ========
 3. Clone mmcblk0 -> sdb and change boot from SSD sdb
 
