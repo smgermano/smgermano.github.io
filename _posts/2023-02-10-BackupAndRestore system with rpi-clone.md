@@ -28,16 +28,17 @@ Wait several time
 ````
 $ sudo rpi-clone mmcblk0
 ````
-"Booted disk: sdb 480.1GB               	Destination disk: mmcblk0 127.9GB
----------------------------------------------------------------------------"
+````
+Booted disk: sdb 480.1GB               	Destination disk: mmcblk0 127.9GB
+---------------------------------------------------------------------------
 Part  	Size	FS 	Label       	Part   Size	FS 	Label   
 1 /boot   256.0M  fat32  --          	1  	256.0M  fat32  -- 	 
 2 root	446.9G  ext4   rpi-OS      	2  	118.9G  ext4   rootfs  
----------------------------------------------------------------------------"
+---------------------------------------------------------------------------
 == SYNC sdb file systems to mmcblk0 ==
 /boot             	(30.0M used)   : SYNC to mmcblk0p1 (256.0M size)
 /                 	(30.1G used)   : SYNC to mmcblk0p2 (118.9G size)
----------------------------------------------------------------------------"
+---------------------------------------------------------------------------
 Run setup script   	: no.
 Verbose mode       	: no.
 -----------------------:
@@ -58,7 +59,7 @@ Done with clone to /dev/mmcblk0
    Start - 17:35:03	End - 17:42:01	Elapsed Time - 6:58
 
 Cloned partitions are mounted on /mnt/clone for inspection or customizing.
-
+````
 
  Make changes of fstab (than can may editables if fail by extracting SD card)
  If changes works, follow step 3
