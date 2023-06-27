@@ -1,5 +1,5 @@
 
-## How to Bakcup and Restore Raspberry Pi OS system 
+## How to Backup and Restore Raspberry Pi OS system (SD card <-> SSD)
 
 #### rpi-clone (simple mode)
 Clone system from SD card to USB-SATA SSD
