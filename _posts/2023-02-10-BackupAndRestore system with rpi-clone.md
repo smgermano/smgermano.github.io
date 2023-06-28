@@ -64,12 +64,14 @@ Cloned partitions are mounted on /mnt/clone for inspection or customizing.
  Make changes of fstab (than can may editables if fail by extracting SD card)
  If changes works, follow step 3
 
+![Image](https://github.com/smgermano/smgermano.github.io/blob/main/_images/rpi-clone01.jpg)
+
 #### Pendiente:
 ========
 
 3. Clone mmcblk0 -> sdb and change boot from SSD sdb
 
-4. Keep backup :
+   Keep backup :
 
   -> USB boot clone back to SD card slot that preserves SD card to USB boot setup:
 
