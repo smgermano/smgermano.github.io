@@ -44,27 +44,7 @@ Verbose mode       	: no.
 -----------------------:
 
 Ok to proceed with the clone?  (yes/no):     
-
-Syncing file systems (can take a long time)
-Syncing mounted partitions:
-  Mounting /dev/mmcblk0p2 on /mnt/clone
-  => rsync // /mnt/clone with-root-excludes ...
-  Mounting /dev/mmcblk0p1 on /mnt/clone/boot
-  => rsync /boot/ /mnt/clone/boot  ...
-
-Editing /mnt/clone/boot/cmdline.txt PARTUUID to use 6ee70e10
-Editing /mnt/clone/etc/fstab PARTUUID to use 6ee70e10
-==============================="
-Done with clone to /dev/mmcblk0
-   Start - 17:35:03	End - 17:42:01	Elapsed Time - 6:58
-
-Cloned partitions are mounted on /mnt/clone for inspection or customizing.
 ````
-
- Make changes of fstab (than can may editables if fail by extracting SD card)
- If changes works, follow step 3
-
-![Image](https://github.com/smgermano/smgermano.github.io/blob/main/_images/rpi-clone01.jpg)
 
 #### Pendiente:
 ========
