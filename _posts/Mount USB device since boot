@@ -30,7 +30,10 @@ lrwxrwxrwx 1 root root 10 Jun 22 19:27 /dev/disk/by-uuid/A8087C0F087BDB30 -> ../
 To more detail about disk 
 ```$ sudo fdisk -l```
 
-3. Edit fstab
+In the case of ntfs partitions must install ntfs-3g
+```$ sudo apt install ntfs-3g```
+
+3. Edit fstab 
 ```
 $ cp sudo /etc/fstab /etc/fstab.old
 $ sudo vim /etc/fstab 
