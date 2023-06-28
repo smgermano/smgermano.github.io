@@ -1,5 +1,5 @@
 
-## How to Backup and Restore Raspberry Pi OS system (SD card to SSD and inverse)
+## How to Backup and Restore Raspberry Pi OS system
 
 #### rpi-clone (simple mode)
 Clone system from SD card to USB-SATA SSD
@@ -28,37 +28,8 @@ Wait several time
 ````
 $ sudo rpi-clone mmcblk0
 ````
-````
-Booted disk: sdb 480.1GB               	Destination disk: mmcblk0 127.9GB
----------------------------------------------------------------------------
-Part  	Size	FS 	Label       	Part   Size	FS 	Label   
-1 /boot   256.0M  fat32  --          	1  	256.0M  fat32  -- 	 
-2 root	446.9G  ext4   rpi-OS      	2  	118.9G  ext4   rootfs  
----------------------------------------------------------------------------
-== SYNC sdb file systems to mmcblk0 ==
-/boot             	(30.0M used)   : SYNC to mmcblk0p1 (256.0M size)
-/                 	(30.1G used)   : SYNC to mmcblk0p2 (118.9G size)
----------------------------------------------------------------------------
-Run setup script   	: no.
-Verbose mode       	: no.
------------------------:
+3. Modificar el archivo fstab
 
-Ok to proceed with the clone?  (yes/no):     
-````
 
-#### Pendiente:
-========
+4. #### Pendiente
 
-3. Clone mmcblk0 -> sdb and change boot from SSD sdb
-
-   Keep backup :
-
-  -> USB boot clone back to SD card slot that preserves SD card to USB boot setup:
-
-    $ rpi-clone -l mmcblk0
-
-	-l  	- leave SD card to USB boot alone when cloning to SD card mmcblk0
-            	from a USB boot.  This preserves a SD card to USB boot setup
-            	by leaving the SD card cmdline.txt using the USB root.    When
-            	cloning to USB from SD card this option sets up the SD card
-            	cmdline.txt to boot to the USB disk.
