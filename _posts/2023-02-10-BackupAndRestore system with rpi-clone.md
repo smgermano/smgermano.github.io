@@ -29,12 +29,12 @@ Steps:
   
   b) get this message instead, ``Ok to proceed with the clone?  (yes/no): `` (choose "no" if you don't whant to clone)
 
-2. Clone sdb -> mmcblk0 and change boot from SDcard
+2. Clone sdb -> mmcblk0 and change boot from SDcard and reboot
 ````
 $ sudo rpi-clone mmcblk0
 ````
 3. Modificar el archivo fstab
+Follow this link: [Modify fstab](https://github.com/smgermano/smgermano.github.io/blob/main/_posts/2023-01-10-Mount%20USB%20device%20since%20boot.md)
 
-
-4. #### Pendiente
+4. Make sure all is working and check the step 1.
 
